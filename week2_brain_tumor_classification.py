@@ -13,7 +13,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-! kaggle datasets download -d masoudnickparvar/brain-tumor-mri-dataset --unzip
+"""! kaggle datasets download -d masoudnickparvar/brain-tumor-mri-dataset --unzip"""
 
 def get_class_paths(path):
   classes = []
@@ -36,7 +36,7 @@ def get_class_paths(path):
   })
 
   return df
-
+#visualizing training and testing data
 tr_df = get_class_paths("/content/Training")
 ts_df = get_class_paths("/content/Testing")
 
@@ -394,7 +394,7 @@ cnn_model.save("cnn_model.h5")
 
 """Part 2 : Streamlit Web app ."""
 
-! pip install streamlit pyngrok python-dotenv
+"""! pip install streamlit pyngrok python-dotenv"""
 
 from threading import Thread
 from pyngrok import ngrok
