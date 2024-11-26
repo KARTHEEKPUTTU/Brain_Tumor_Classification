@@ -36,7 +36,7 @@ def get_class_paths(path):
   })
 
   return df
-#visualizing training and testing data
+
 tr_df = get_class_paths("/content/Training")
 ts_df = get_class_paths("/content/Testing")
 
